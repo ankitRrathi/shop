@@ -3,8 +3,9 @@ import 'package:flutter/material.dart';
 class Mytheme {
   static ThemeData lightTheme(BuildContext context) => ThemeData(
     fontFamily: 'ankit',
-    colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-    primaryColor: Colors.amber,
+   
+    colorScheme: ColorScheme.fromSeed(seedColor: const  Color.fromRGBO(254, 206, 1, 1)),
+    
     
       appBarTheme: const AppBarTheme(
           color: Colors.white,
@@ -15,6 +16,7 @@ class Mytheme {
           iconTheme: IconThemeData(color: Colors.black)));
   static ThemeData darkTheme(BuildContext context) => ThemeData(
       brightness: Brightness.dark,
+       colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       
       fontFamily: 'ankit',
       textTheme: Theme.of(context).textTheme,
