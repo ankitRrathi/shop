@@ -6,7 +6,7 @@ final products = [
     'price' : 42.21,
     'company' : 'Adidas',
     'imageUrl': 'assets/images/shoe_1.png',
-    'size': [9,10,11,12],
+    'sizes': [11,12,14,15,8],
 
   },
   {
@@ -15,7 +15,7 @@ final products = [
     'price' : 23.21,
     'company' : 'Nike',
     'imageUrl': 'assets/images/shoe_2.png',
-    'size': [9,10,11,12],
+    'sizes': [9,10,11,12],
 
   },
   {
@@ -24,7 +24,7 @@ final products = [
     'price' : 10.21,
     'company' : 'Puma',
     'imageUrl': 'assets/images/shoe_3.png',
-    'size': [9,10,11,12],
+    'sizes': [9,10,11,12],
 
   },
   {
@@ -33,7 +33,7 @@ final products = [
     'price' : 39.21,
     'company' : 'Reebok',
     'imageUrl': 'assets/images/shoe_4.png',
-    'size': [9,10,11,12],
+    'sizes': [9,10,11,12],
 
   },
   {
@@ -42,7 +42,19 @@ final products = [
     'price' : 22.21,
     'company' : 'Jordan',
     'imageUrl': 'assets/images/shoe_5.png',
-    'size': [9,10,11,12],
+    'sizes': [9,10,11,12],
 
   },
+];
+final cart = [
+ {
+    'id': 5,
+    'title' : 'Men\'s Jordan Wear',
+    'price' : 22.21,
+    'company' : 'Jordan',
+    'imageUrl': 'assets/images/shoe_5.png',
+    'sizes': 8,
+
+  },
+
 ];
