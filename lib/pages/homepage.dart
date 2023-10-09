@@ -20,9 +20,12 @@ class _HomepageState extends State<Homepage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body:IndexedStack(
-        index: currentPage,
-        children: pages,
+      
+      body:SafeArea(minimum:const  EdgeInsets.only(top: 20),
+        child: IndexedStack(
+          index: currentPage,
+          children: pages,
+        ),
       ),
       bottomNavigationBar: BottomNavigationBar(
         selectedItemColor: Theme.of(context).primaryColor,

@@ -46,15 +46,3 @@ final products = [
 
   },
 ];
-final cart = [
- {
-    'id': 5,
-    'title' : 'Men\'s Jordan Wear',
-    'price' : 22.21,
-    'company' : 'Jordan',
-    'imageUrl': 'assets/images/shoe_5.png',
-    'sizes': 8,
-
-  },
-
-];

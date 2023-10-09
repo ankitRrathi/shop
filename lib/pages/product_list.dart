@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shop/global_variables.dart';
+import 'package:shop/pages/product_details_page.dart';
 import 'package:shop/pages/products.dart';
 
 
@@ -102,10 +103,15 @@ class _ProductListState extends State<ProductList> {
               child: ListView.builder(itemCount: products.length,
                 itemBuilder: (contect,index){
                   final product =products[index];
-                  return   Product(
-                  title: product['title'] as String,
-                  price: product['price'] as double,
-                  image: product['imageUrl'] as String,
+                  return   GestureDetector(
+                    onTap: (){
+                      Navigator.of(context).push(MaterialPageRoute(builder: (context){return ProductDetailPage(product: products[index]);}));
+                    },
+                    child: Product(
+                    title: product['title'] as String,
+                    price: product['price'] as double,
+                    image: product['imageUrl'] as String,
+                    ),
                   );
             
                 }
